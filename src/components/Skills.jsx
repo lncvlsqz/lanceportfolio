@@ -23,11 +23,13 @@ const skillIcons = {
   "Project Management": ListChecks,
 };
 
+const base = import.meta.env.BASE_URL;
+
 const brandLogos = {
-  Canva: "/skill-logos/canva.svg",
-  "Microsoft Excel": "/skill-logos/excel.svg",
-  "Microsoft Word": "/skill-logos/word.svg",
-  "Microsoft PowerPoint": "/skill-logos/powerpoint.svg",
+  Canva: `${base}skill-logos/canva.svg`,
+  "Microsoft Excel": `${base}skill-logos/excel.svg`,
+  "Microsoft Word": `${base}skill-logos/word.svg`,
+  "Microsoft PowerPoint": `${base}skill-logos/powerpoint.svg`,
 };
 
 // Row 1: Adaptability until Canva -> moves to the left

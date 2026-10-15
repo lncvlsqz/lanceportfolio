@@ -1,3 +1,5 @@
+const base = import.meta.env.BASE_URL;
+
 export const profile = {
   name: "Lance Velasquez",
   fullName: "Lance Alipio Velasquez",
@@ -9,9 +11,9 @@ export const profile = {
   github: "https://github.com/lncvlsqz",
   linkedin: "https://www.linkedin.com/in/lance-velasquez-620236334",
   discord: "http://discordapp.com/users/1263675052939935776",
-  photo: "/images/profile-light.jpg",
-  photoDark: "/images/profile-dark.jpg",
-  resume: "/resume/lance-velasquez-resume.pdf",
+  photo: `${base}images/profile-light.jpg`,
+  photoDark: `${base}images/profile-dark.jpg`,
+  resume: `${base}resume/lance-velasquez-resume.pdf`,
 };
 
 export const about = {
@@ -60,14 +62,14 @@ export const projectExperience = [
 
 export const education = [
   {
-    logo: "/images/icct-logo.jpg",
+    logo: `${base}images/icct-logo.jpg`,
     title: "Institute of Creating Computer Technology (ICCT Colleges)",
     subtitle: "Computer Engineering",
     date: "2023 - Present",
     href: "https://www.icct.edu.ph/",
   },
   {
-    logo: "/images/asiatech-logo.jpg",
+    logo: `${base}images/asiatech-logo.jpg`,
     title: "Asia Technological School of Science and Arts",
     subtitle: "Senior High School",
     date: "2016 - 2018",
